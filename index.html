@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Encriptador ONE | Sprint 1</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' type='text/css' media='screen' href='assets\css\reset.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='assets\css\index.css'>
+        <link rel="shortcut icon" href="assets\images\icono.png">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="assets\img\logo.png" alt="logo_alura">
+        </header>
+        <main>
+            <section class="work-area">
+                <textarea name="txt-area" class="txt-area" placeholder="ingrese el texto aqui"></textarea>
+                <div class="txt-info">
+                    <img src="assets\img\exclamation.png"><p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="buttons-wa">
+                    <input type="button" class="btn-encriptar" value="Encriptar" onclick="encrypt()">
+                    <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="decrypt()">
+                </div>
+            </section>
+            <section id="output-area" class="output-area">
+                <div class="munieco">
+                    <img src="assets\img\munieco.png">
+                </div>
+                <div class="msj-info">
+                    <h1>Ningún mensaje fue encontrado</h1>
+                </div>
+                <div class="msj-output">
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="buttons-oa">
+                    <input type="button" class="btn-copiar" value="Copiar" onclick="copy()">
+                </div>                
+            </section>        
+        </main>
+    </body>
+    <script src='assets\js\index.js'></script>
+</html>
